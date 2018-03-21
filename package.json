@@ -1,0 +1,19 @@
+{
+  "name": "shopify-slate-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "node_modules/.bin/eslint resources/js",
+    "lint-fix": "node_modules/.bin/eslint --fix resources/js"
+  },
+  "devDependencies": {
+    "@shopify/slate-tools": "0.13.0",
+    "laravel-mix": "^2.1.11",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
