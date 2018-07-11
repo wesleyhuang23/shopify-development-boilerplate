@@ -1,5 +1,18 @@
 let mix = require('laravel-mix')
 
 mix.js('resources/js/app.js', 'src/assets')
-    .sass('resources/scss/app.scss', 'src/assets')
-    .setPublicPath(path.normalize('src/assets'))
+  .sass('resources/sass/app.scss', 'src/assets')
+  .purgeCss({
+    folders: [
+      'src'
+    ],
+    extensions: [
+      'liquid',
+      'js'
+    ],
+    whitelistPatterns: [
+      /small-/,
+      /medium-/,
+      /large-/,
+    ],
+  })

@@ -11,9 +11,10 @@
   },
   "devDependencies": {
     "@shopify/slate-tools": "0.13.0",
-    "laravel-mix": "^2.1.11",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "laravel-mix": "^2.1.11",
+    "laravel-mix-purgecss": "^2.2.0"
   }
 }
