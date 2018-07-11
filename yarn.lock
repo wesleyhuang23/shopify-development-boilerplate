@@ -78,9 +78,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@shopify/slate-tools@0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@shopify/slate-tools/-/slate-tools-0.13.0.tgz#5a37651091f73abb493525440541db028a6de8ca"
+"@shopify/slate-tools@0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@shopify/slate-tools/-/slate-tools-0.14.0.tgz#2880efd9d6525bf5d4795a36b0201b8e125a88ea"
   dependencies:
     "@shopify/theme-lint" "1.0.3"
     "@shopify/themekit" "0.6.6"

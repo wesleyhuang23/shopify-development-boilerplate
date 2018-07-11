@@ -10,7 +10,7 @@
     "lint-fix": "node_modules/.bin/eslint --fix resources/js"
   },
   "devDependencies": {
-    "@shopify/slate-tools": "0.13.0",
+    "@shopify/slate-tools": "0.14.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
