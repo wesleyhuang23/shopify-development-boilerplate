@@ -1,20 +1,33 @@
 {
-  "name": "shopify-slate-boilerplate",
-  "version": "1.0.0",
   "scripts": {
-    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack --mode development --progress --hide-modules --config=webpack.config.js",
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch --progress --hide-modules --config=webpack.config.js",
+    "prod": "cross-env NODE_ENV=production webpack --mode production --no-progress --hide-modules --config=webpack.config.js",
+    "production": "yarn prod",
+    "scrape": "node resources/scrape.js",
     "lint": "node_modules/.bin/eslint resources/js",
     "lint-fix": "node_modules/.bin/eslint --fix resources/js"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
     "@shopify/slate-tools": "0.14.0",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "laravel-mix": "^2.1.11",
-    "laravel-mix-purgecss": "^2.2.0"
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.11.0",
+    "postcss-discard-comments": "^4.0.2",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "website-scraper": "^4.0.1"
   }
 }

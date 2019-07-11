@@ -1,11 +1,3 @@
-# Project #
-###################
-node_modules
-dist
-upload
-deploy.log
-config.yml
-
 # Compiled source #
 ###################
 *.com
@@ -44,11 +36,26 @@ config.yml
 ehthumbs.db
 Thumbs.db
 
+# Compiled resources #
+######################
+src/assets/app.css
+src/assets/app.js
+
 # Custom #
 ######################
 *.sass-cache*
+node_modules
 _site
+dist
+upload
 /.idea
+deploy.log
+config.yml
+!.circleci/config.yml
 secrets.json
 .jekyll-metadata
 .ruby-version
+lerna-debug.log
+/packages/slate-cli/lib/
+/packages/slate-tools/lib/
+.changelog/
