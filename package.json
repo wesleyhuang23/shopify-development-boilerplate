@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@shopify/slate-tools": "0.14.0",
     "autoprefixer": "^9.5.1",
@@ -29,5 +28,8 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "website-scraper": "^4.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.4.7"
   }
 }
