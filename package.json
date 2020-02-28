@@ -4,7 +4,6 @@
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch --progress --hide-modules --config=webpack.config.js",
     "prod": "cross-env NODE_ENV=production webpack --mode production --no-progress --hide-modules --config=webpack.config.js",
     "production": "yarn prod",
-    "scrape": "node resources/scrape.js",
     "lint": "node_modules/.bin/eslint resources/js",
     "lint-fix": "node_modules/.bin/eslint --fix resources/js"
   },
@@ -26,8 +25,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
     "webpack": "^4.0.0",
-    "webpack-cli": "^3.0.0",
-    "website-scraper": "^4.2.0"
+    "webpack-cli": "^3.0.0"
   },
   "dependencies": {
     "core-js": "^3.0.0"
