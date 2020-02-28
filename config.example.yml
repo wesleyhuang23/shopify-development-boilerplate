@@ -5,7 +5,6 @@ development:
   store: your-shop.myshopify.com
   ignore_files:
     settings_data.json
-    mix-manifest.json
 
 # Production environment
 production:
@@ -14,4 +13,3 @@ production:
   store: your-shop.myshopify.com
   ignore_files:
     settings_data.json
-    mix-manifest.json
