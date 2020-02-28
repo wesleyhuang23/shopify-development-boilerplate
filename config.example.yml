@@ -3,6 +3,7 @@ development:
   password:
   theme_id:
   store: your-shop.myshopify.com
+  directory: src
   ignore_files:
     settings_data.json
 
@@ -11,5 +12,6 @@ production:
   password:
   theme_id:
   store: your-shop.myshopify.com
+  directory: src
   ignore_files:
     settings_data.json
