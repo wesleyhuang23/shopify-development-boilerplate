@@ -1,7 +1,8 @@
-# Shopify Slate Boilerplate
-A boilerplate for building Shopify themes using their [Slate 0.14](https://github.com/Shopify/slate) tool.
+# Shopify Theme Developer Boilerplate
+Simple boilerplate setup for developing Shopify Themes.
 
-This setup is extended with [Webpack](https://webpack.js.org/), [PostCSS](https://postcss.org/), [ESLint](https://eslint.org/) (Using AirBnb styleguide) and various useful features to build your Shopify theme.
-
-### Resources
-- [Slate documentation](https://shopify.github.io/slate/)
+#### Stack
+- [Themekit](https://github.com/Shopify/themekit)
+- [Webpack](https://webpack.js.org/)
+- [PostCSS](https://postcss.org/)
+- [ESLint](https://eslint.org/) (Using AirBnb styleguide)
