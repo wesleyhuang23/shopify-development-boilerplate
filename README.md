@@ -8,6 +8,8 @@ Simple boilerplate setup for developing Shopify Themes.
 
 - `$ yarn watch`<br>Watch for changes in CSS and JS assets, and build them for development environment.
 
+- `$ yarn lint`<br>Run ESLint on JavaScript resources.
+
 - `$ theme watch`<br>Watch for file changes, and upload them to Shopify theme.
 
 - `$ theme deploy`<br>Deploy all files to Shopify theme.
