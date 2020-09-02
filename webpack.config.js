@@ -1,21 +1,28 @@
 const path = require('path');
+const webpack = require("webpack");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    app: path.join(__dirname, 'resources/app.js'),
+    app: path.join(__dirname, 'src/app.js'),
   },
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
+      filename: '[name].css.liquid',
+      chunkFilename: '[id].css.liquid',
     }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
+      Popper: ["popper.js", "default"]
+    })
   ],
 
   output: {
-    filename: '[name].js',
-    path: path.join(__dirname, 'src/assets'),
+    filename: '[name].js.liquid',
+    path: path.join(__dirname, 'views/assets'),
   },
 
   module: {
@@ -43,11 +50,27 @@ module.exports = {
               hmr: process.env.NODE_ENV === 'development',
             },
           },
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+            },
+          }
         ],
       },
     ],
   }
 };
+
